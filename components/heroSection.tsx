@@ -1,6 +1,8 @@
 'use client';
 import React from 'react';
 import TypeWriter from 'typewriter-effect';
+import InputComponent from './InputComponent';
+
 const HeroSection = () => {
     return (
         <div className="flex items-center justify-center pt-10 flex-col">
@@ -9,7 +11,7 @@ const HeroSection = () => {
                 <div className="orange-gradient">
                     <TypeWriter
                         options={{
-                            strings: ['OpenAI GPT-4', 'Fast, Reliable'],
+                            strings: ['OpenAI GPT-4', 'Fast', 'Reliable'],
                             autoStart: true,
                             loop: true,
                             delay: 100,
@@ -22,6 +24,7 @@ const HeroSection = () => {
                 summarizer that transform lengthy articles into clear and
                 concise summaries
             </p>
+            <InputComponent />
         </div>
     );
 };
